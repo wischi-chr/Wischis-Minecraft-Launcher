@@ -11,19 +11,6 @@ namespace WischisMinecraftLauncher
 {
     static class Program
     {
-
-        static DateTime  LastGet = DateTime.MaxValue;
-
-        static double  Secs
-        {
-            get
-            {
-                double buffer = (DateTime.Now - LastGet).TotalSeconds;
-                LastGet = DateTime.Now;
-                return buffer;
-            }
-        }
-
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -38,10 +25,8 @@ namespace WischisMinecraftLauncher
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Updater());
         }
-
-
 
         static void Application_ThreadException(object sender, ThreadExceptionEventArgs e)
         {

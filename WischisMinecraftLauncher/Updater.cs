@@ -14,9 +14,9 @@ using System.Threading;
 
 namespace WischisMinecraftLauncher
 {
-    public partial class Form1 : Form
+    public partial class Updater : Form
     {
-        public Form1()
+        public Updater()
         {
             InitializeComponent();
             LoadMinecraftFont();

@@ -24,8 +24,12 @@ using WischisMinecraftLauncherCoreDLL;
 
 namespace ExternalMinecraftLauncher
 {
+    /// <summary>
+    /// Die Graphische Oberfläche des Wischilaunchers
+    /// </summary>
     public partial class WischiLauncherMainForm : Form
     {
+
         Dictionary<string, MinecraftBinJarLocation> MinecraftLocations = new Dictionary<string, MinecraftBinJarLocation>();
 
         public void ClearLog()
@@ -60,11 +64,6 @@ namespace ExternalMinecraftLauncher
         FontFamily MinecraftFont;
 
         Microsoft.VisualBasic.Devices.ComputerInfo CInfo = new Microsoft.VisualBasic.Devices.ComputerInfo();
-
-        public void InvalidateJarOfProfile(LauncherProfile Profil)
-        {
-
-        }
 
         public WischiLauncherMainForm()
         {
@@ -393,7 +392,7 @@ namespace ExternalMinecraftLauncher
             minecraft = new Process();
             minecraft.StartInfo.FileName = Profil.Settings.JavaExecutable;
 
-            //TODO: Pfad verbiegen
+            //Pfad verbiegen
             minecraft.StartInfo.EnvironmentVariables["appdata"] = LauncherFolderStructure.GetSpecificProfilePath(Profil);
 
             if (!MinecraftLocations.ContainsKey(Profil.Settings.MinecraftBinJarHash))

@@ -1,0 +1,91 @@
+﻿Wischis Mincraft Launcher - Nutzungsbedingungen & Hinweise
+
+0. ALLGEMEINES
+==============
+Die einzige Rechtsgültige Version der Nutzungsbedingungen die Originale deutsche Fassung! Jegliche Übersetzungen dieses Textes in andere Sprachen dienen NUR zur Information, sind jedoch keine Rechtsgrundlage.
+
+1. INOFFIZIELLER LAUNCHER!!
+===========================
+Trotz der gegebenen Ähnlichkeit zum offiziellen Launcher (welche den Einstieg erleichtern soll) ist dieser Launcher NICHT VON MOJANG(!) die Entwicklung des Launchers passiert durch Christian Wischenbart welcher im Folgenden als "Wischi" bezeichnet wird. Die Qualität des Launchers (sowohl im positiven als auch im negativen Sinne) ist zur gänze Wischi zuzuschreiben.
+
+2. VERBREITUNG DER SOFTWARE
+===========================
+Die Software darf nur in unveränderter Form und einem deutlich erkennbaren Hinweis auf den Tatsächlichen Autor (Wischi) verbreitet werden. Der weiterverkauf der Software ist VERBOTEN! Die Software ist eine Freeware und darf auch nur frei weitergegeben werden. Jeglicher Vertieb welcher mit Materialkosten verbunden wäre, welche durch den Verkäufer eingefordert werden würden ist zu unterlassen und nur durch ausdrückliche schriftliche Genehmigung des Autors Wischi erlaubt. (Beispiel: Weitergabe der Software auf CD oder USB-Stick ohne Geld zu verlangen ist in Ordnung, ein weitergeben der Software auf CD gegen Geld - auch wenn es nur Materialkosten sind - ist nur mit erlaubnis gestattet)
+
+2.a Es ist verboten die Software in veränderter Form zu verbreiten.
+2.b Veränderungen für private Nutzungen sind erlaubt.
+3.c Die Software darf nicht in Teilen verbreitet werden. Lediglich die Verbreitung des Produkt als gesamtes ist gestattet.
+
+3. HAFTUNGSAUSSCHLUSS
+=====================
+Die Software wurde mit bestmöglicher Sorgfalt entwickelt und ausreichend gestestet, jedoch kann totz zahlreicher Qualitätstests keine Garantie bzw. Gewährleistung für die einwandfreie Funktion gegeben werden. Sollte es zu Fehlfunktionen kommen melden Sie dies bitte umgegend an christian.wischenbart@gmail.com damit diese Fehler behoben werden können. Ich (Wischi) übernehme auch keine Haftung bei Beschädigten Dateien (z.B. Minecraft Speicherständen) welche aufgrund dieser Software passiert sind.
+
+3.a VERSCHLÜSSELUNG
+Dieser Launcher bietet wie der offizielle Minecraft Launcher auch eine Möglichkeit an das Passwort lokal zu speichern, damit es nicht bei jedem Start erneut eingegeben werden muss. Das Speichern mit dem Wischis Minecraft Launcher ist weder sicherer noch unsicherer als die Speichermethode des offiziellen Launchers. Obwohl mojang die Sicherheitsrisiken verschweigt möchte ich hier auf folgendes Hinweisen. Jeder der auf deine persönliche lastlogin-Datei (des offzielen Launchers) zugriff hat, könnte bei entsprechendem Wissen deinen Benutzer und dein Passwort auslesen. Auch beim inoffiziellen Launcher kann mit entsprechendem Wissen das Passwort ausgelesen werden wenn der Täter die Verschlüsselung kennt. HINWEIS: Es gibt leider keinen 100% Schutz für lokal gespeicherte Passwörter welche wieder ausgelesen werden müssen (bei Hashes ist ein wiederauslesen unmöglich) daher muss jeder der die Passwort-Speichern Funktion benutzt selbst auf die lastlogin-Datei (offizieller Launcher) bzw. Auf die Registry-Einstellungen (Wischis Minecraft Launcher) aufpassen.
+
+4. HINWEISE ZUR SICHERHEIT DES WISCHIS MINECRAFT LAUNCHERS
+==========================================================
+Da es jedem User zusteht zu verstehen was das Tool macht hier einige Erklärungen.
+
+4.a. SPEICHERN UND VERWALTEN VON EINSTELLUNGEN
+Der Launcher speichert sämtliche Einstellungen in der Registry unter HKCU\Software\WischisMinecraft\Launcher im Klartext (Ausnahme siehe 3.a) sollten jedoch nicht manuell verändert werden.
+
+4.b. VERBINDUNGEN DES LAUNCHERS ZUM INTERNET
+Beim Starten (Drücken des Login-Buttons) werden UserName und Passwort verschlüsselt (HTTPS) an mojang (https://login.minecraft.net) übertragen um die Anmeldung durchzuführen (dies ist die einzige und verschlüsselte Stelle an der dein Passwort übertragen wird)
+- Ist die Version "akuelle Minecraft Version" ausgewäht wird noch auf minecraft.net und lokal überprüft ob die lokale Version die aktuelle ist, sonst wird ein Update durchgeführt (mit den Resourcen von minecraft.net)
+- Ist eine andere Version ausgewählt als die aktuelle ausgewählt, so verbindet sich der client zu wischenbart.org mit Folgendem Protokoll:
+(die Verbindung ist notwendig um auf eine ältere Version downzugraden und um sich zu authentifiziernen, damit nur Premium-User den Launcher nutzen können, um illegale Verwendung einzuschränken)
+
+* per http://dev.wischenbart.org/minecraft/requesthash.php?user=<username> wird ein Hash abgerufen.
+* per http://session.minecraft.net/game/joinserver.jsp?user=<username>&sessionId=<session id>&serverId=<hash> registriert man den Hash bei mojang
+* danach können auf http://dev.wischenbart.org/minecraft/jars/* die alten Versionen downgeloaded werden
+* der wischenbart.org Server überprüft mit http://session.minecraft.net/game/checkserver.jsp?user=<username>&serverId=<hash> ob der User tatsächlich ein Premium-User ist
+
+5. SICHERHEITSTECHNISCHE ANALYSEN UND REVIEWS
+=============================================
+Jegliche Analyse des Launchers ist nicht nur ausdrücklich erlaubt sondern auch erwünscht, mit der Einschränkung, dass potentielle Lücken oder Fehler an Wischi zu melden sind, damit diese eseitigt werden können. Im Folgenden einige Tipps und Hinweise für Interessenten.
+
+5.a. Der Launcher ist ClosedSource, aber für Analysen und Reviews werden auf Anfrage gerne Teile des Codes zur Verfügung gestellt (Verbreitung des Codes ist verboten - geistiges Eigentum von Wischi!)
+5.b. Ein Klasse Tool zum Aufzeichnen der Netzwerk und Internetverbindungen ist WireShark. Geübte Leute können hier schnell erkennen, dass mit euren Daten kein Unfug passiert.
+
+6. FREIE SOFTWARE
+=================
+Der WischisMinecraftLauncher ist eine Freie Software welche ich in meiner Freizeit entwickle. Das nimmt einiges an Zeit in Anspruch, aber auch Kosten. Ich würde mich sehr freunen, wenn Leute welche meine Arbeit schätzen, beim Punkt Info auf Spenden klicken. Ich freue mich auch schon über ein paar Euro, aber auch etwas größere Beträge sind gerne gesehen. Ab 25EUR kann man seinen Namen (oder Nickname) auf der Info-Seite verewigen lassen (wenn gewünscht auch mit dem gespendeten Betrag)
+
+7. EIGENER SERVER LAUNCHER
+==========================
+In Zukunft (momentan sind noch keine Konditionen ausgearbeitet, Angebote können jedoch schon erfragt werden) wird es für jeden Server möglich sein einen Launcher in der Eigenen Version anzubieten. Mit folgenden Features:
+- Eigenes Logo im Launcher
+- Syncronisation mit Server-Version (d.h. ändert der Server seine Version wird der Spieler beim nächsten Start mit dem Server-Launcher automatisch up/downgegraded)
+- Eigener News-Bereich (der offizielle Minecraft-News Bereich kann gegen eine eigene Seite ausgetauscht werden)
+- Vorgegebene/Empfohlene Plugins für die Spieler des Servers (Bukkit Client, Flymod für Teammitglieder, WaterShader usw.)
+- Vorgegebene/Empfohlene Plugins für die Spieler des Servers
+- Eine API zum verifizieren ob der Spieler den Server über den Launcher gestartet hat oder nicht.
+
+HINWEIS: Die Eigene Server-Version des Launchers ist keine Freeware sondern ein Kommerzieller erwerb der Software. Es kann eine Kostenlose Demo angefordert werden welche auf einen User beschränkt ist (zum testen des Funktionsumfangs)
+
+8. FREMDPRODUKTE
+================
+Das Tool wurde bis auf im Folgenden genannten Produkte von Christian Wischenbart erstellt.
+
+- DotNetZip Library (http://dotnetzip.codeplex.com/)
+Zum verarbeiten von Zip und Jar Dateien (minecraft.jars und Modifikationen)
+
+- IconExtractor (http://www.codeproject.com/KB/cs/IconExtractor.aspx)
+Zum extrahieren von Icons von sich selbst *gg* Die Icons für die Profillinks sind als Resource in den Launcher gebunden
+
+- Raper.Kodachi.Shared.ShellLink (http://www.java2s.com/Open-Source/CSharp/Windows/kodachi/Rapier/Kodachi/Shared/ShellLink.cs.htm)
+Zum erstellen der Verknüpfungen für die Profile
+
+SALVATORISCHE KLAUSEL
+=====================
+Sollten einzelne Bestimmungen dieses Vertrages unwirksam oder undurchführbar sein oder nach Vertragsschluss unwirksam oder undurchführbar werden, bleibt davon die Wirksamkeit des Vertrages im Übrigen unberührt. An die Stelle der unwirksamen oder undurchführbaren Bestimmung soll diejenige wirksame und durchführbare Regelung treten, deren Wirkungen der wirtschaftlichen Zielsetzung am nächsten kommen, die die Vertragsparteien mit der unwirksamen bzw. undurchführbaren Bestimmung verfolgt haben. Die vorstehenden Bestimmungen gelten entsprechend für den Fall, dass sich der Vertrag als lückenhaft erweist.
+
+ANGABEN ZUM ENTWICKLER
+======================
+Sollte ein Kontakt zum Entwickler erforderlich sein dann wenden Sie sich bitte an:
+christian.wischenbart@gmail.com
+Sollten Sie einen anderen Kommunikationskanal bevorzugen, so teilen Sie mir dies bitte per Mail mit.
+
+
+- Und nun viel Spass mit dem Wischi Launcher und beim Minecraft zocken.

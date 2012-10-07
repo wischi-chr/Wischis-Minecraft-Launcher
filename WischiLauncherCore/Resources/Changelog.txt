@@ -1,0 +1,77 @@
+﻿ChangeLog - Wischis Minecraft Launcher
+
+20.09.2012 (v2.5.0.1374) ==============
+- Versionen in der Übersicht werden schneller geladen
+
+21.08.2012 (v2.5.0.1364) ==============
+- Fehler beim Schreiben von Logs ausgebessert. Danke an Darkxor für den Hinweis
+
+09.08.2012 (v2.5.0.1362) ==============
+- Minecraft Server Status Infos werden direkt angezeigt (http://status.mojang.com/check)
+
+08.08.2012 (v2.5.0.1348) ==============
+- Fehler bei autoconnect! Workaround: Autoconnect funktioniert nicht, löst aber auch keinen Fehler aus.
+
+20.6.2012 (v2.1.0.1344) ===============
+- Vorbereitungen für den OfflineMode
+- Kleine BugFixes
+
+17.6.2012 (v2.1.0.1324) ===============
+- Bei den Startoptionen kann jetzt die Fenstergröße eingestellt werden
+  (z.B. für Videoaufnahmen)
+
+27.5.2012 (v2.1.0.1294) ===============
+- Lokales erstellen der minecraftjar auch offline möglich.
+- Grundstein für echten Offline-Modus gelegt.
+- Fehlertexte wenn minecraft.net Offline ist kundenfreundlicher gestaltet.
+
+06.05.2012 (v2.1.0.1290)===============
+- MinecraftJars werden bei verifizierten Accounts downgeloaded (Offline-Modus)
+- Manche Texte wurden verständlicher :-) minecraft.jar statt JarCache
+- Garbadge Collector (zum löschen nicht benötigter Caches)
+
+v2.1.0.1274 ===========================
+28.4.2012
+- Fehlerkorrektur für Migrierte Accounts
+
+v2.1.0.1270 ===========================
+- Fehler beim Mod-Patchen erkennen und ausgeben!
+
+v2.1.0.1259 ===========================
+- Beim Starten maximieren (Beta)
+- Prozess Priorität von Minecraft/Java setzen
+- Mehr Infos in Titelleiste
+- Mehr Infos beim Erstellen des Caches
+- Text zusätzlich zum JarCacheInfoIcon
+- Beschleunigung in der JarCache-Thread Warteschlange
+
+Bekannter Bug: Beim ersten Repaint der ModListe wird ein Refresh ausgelöst (kostet Zeit und müsste nicht sein)
+
+v2.1.0.1170 ===========================
+BugFix:
+- JavaPath suche angepasst.
+
+v2.1.0.1143 ===========================
+HINWEIS: Bitte lade dir die neue Version manuell herunter! Ab dann funktionieren die Autoupdates wieder normal. Wenn du den Launcher nicht manuel herunter lädst, kann es zu Problemen kommen!
+Änderungen:
+- Splash Screen zeigt lade und Update-Status.
+- modindex.txt Core angrepasst und für ModUi vorbereitet.
+- ThreadSyncoro Verbessert (JarCache not found behoben)
+- JarCache wird nur bei Remember Password im Hintergrund gebildet (da sonst MinecraftAuth nicht möglich ist)
+- Primitive ModKompatibilitätsanlyse angepasst.
+
+v2.1.0.974 ============================
+- BugFix damit Profillinks wieder funktionieren
+
+v2.1.0.955 ============================
+- Cached schon im Hintergrund (Thread)
+- Mod Kompatibilitäterkennung
+- RamSpeicherbestimmung angepasst
+- UI etwas umgestellt.
+- Buttons zum aktualisieren der Listen und öffnen der Ordner
+
+
+v2.1.0.749 ============================
+- Beginn der Änderungsaufzeichnungen
+  (ChangeLog)
+- BugFix. Java Window-Handleerkennung

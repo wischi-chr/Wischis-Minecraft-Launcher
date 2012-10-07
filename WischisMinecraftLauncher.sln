@@ -1,11 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WischisMinecraftLauncherCore", "WischiLauncherCore\WischisMinecraftLauncherCore.csproj", "{BDDA19EF-16DF-43A2-B0D9-00931985766E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinecraftOptionsPlugin", "MinecraftOptionsPlugin\MinecraftOptionsPlugin.csproj", "{82A20438-26E5-40EF-B288-A7F3D93CFA9E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WischisMinecraftLauncher", "WischisMinecraftLauncher\WischisMinecraftLauncher.csproj", "{D1569E52-5BAA-4AF3-93F9-C1BD6544002B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WischiLauncherGUI", "WischiLauncherGUI\WischiLauncherGUI.csproj", "{2BF86673-39B4-49F3-B811-8587DA5D8034}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,14 +49,24 @@ Global
 		{D1569E52-5BAA-4AF3-93F9-C1BD6544002B}.Release|Mixed Platforms.Build.0 = Release|x86
 		{D1569E52-5BAA-4AF3-93F9-C1BD6544002B}.Release|x86.ActiveCfg = Release|x86
 		{D1569E52-5BAA-4AF3-93F9-C1BD6544002B}.Release|x86.Build.0 = Release|x86
+		{2BF86673-39B4-49F3-B811-8587DA5D8034}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BF86673-39B4-49F3-B811-8587DA5D8034}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BF86673-39B4-49F3-B811-8587DA5D8034}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2BF86673-39B4-49F3-B811-8587DA5D8034}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2BF86673-39B4-49F3-B811-8587DA5D8034}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2BF86673-39B4-49F3-B811-8587DA5D8034}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BF86673-39B4-49F3-B811-8587DA5D8034}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BF86673-39B4-49F3-B811-8587DA5D8034}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2BF86673-39B4-49F3-B811-8587DA5D8034}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2BF86673-39B4-49F3-B811-8587DA5D8034}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		BuildVersion_UpdateAssemblyVersion = False
-		BuildVersion_UpdateFileVersion = False
-		BuildVersion_UseGlobalSettings = False
 		BuildVersion_IncrementBeforeBuild = True
+		BuildVersion_UseGlobalSettings = False
+		BuildVersion_UpdateFileVersion = False
+		BuildVersion_UpdateAssemblyVersion = False
 	EndGlobalSection
 EndGlobal

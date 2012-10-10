@@ -168,6 +168,9 @@
             this.GarbadgeCollector = new System.ComponentModel.BackgroundWorker();
             this.StatusRefresh = new System.ComponentModel.BackgroundWorker();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.StatusTextLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.StatusresetTimer = new System.Windows.Forms.Timer(this.components);
             this.MessageFrameMenue.SuspendLayout();
             this.ProfilMenue.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -232,7 +235,7 @@
             this.toolStripSeparator6,
             this.logfensterÖffnenToolStripMenuItem});
             this.MessageFrameMenue.Name = "contextMenuStrip1";
-            this.MessageFrameMenue.Size = new System.Drawing.Size(169, 126);
+            this.MessageFrameMenue.Size = new System.Drawing.Size(169, 104);
             // 
             // messageFrameKopierenToolStripMenuItem
             // 
@@ -1343,6 +1346,8 @@
             this.toolStripSplitButton2,
             this.CrackTools,
             this.mcserverstatus,
+            this.toolStripStatusLabel2,
+            this.StatusTextLabel,
             this.toolStripStatusLabel1,
             this.ModAnalyzeInfo});
             this.statusStrip1.Location = new System.Drawing.Point(0, 485);
@@ -1470,7 +1475,7 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(431, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(349, 17);
             this.toolStripStatusLabel1.Spring = true;
             // 
             // ModAnalyzeInfo
@@ -1516,6 +1521,23 @@
             this.timer2.Enabled = true;
             this.timer2.Interval = 60000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(42, 17);
+            this.toolStripStatusLabel2.Text = "Status:";
+            // 
+            // StatusTextLabel
+            // 
+            this.StatusTextLabel.Name = "StatusTextLabel";
+            this.StatusTextLabel.Size = new System.Drawing.Size(40, 17);
+            this.StatusTextLabel.Text = "Bereit.";
+            // 
+            // StatusresetTimer
+            // 
+            this.StatusresetTimer.Interval = 10000;
+            this.StatusresetTimer.Tick += new System.EventHandler(this.StatusresetTimer_Tick);
             // 
             // WischiLauncherMainForm
             // 
@@ -1716,6 +1738,9 @@
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripMenuItem logfensterÖffnenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
+        private System.Windows.Forms.ToolStripStatusLabel StatusTextLabel;
+        private System.Windows.Forms.Timer StatusresetTimer;
     }
 }
 

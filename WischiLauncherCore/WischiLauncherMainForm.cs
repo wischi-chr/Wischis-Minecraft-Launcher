@@ -784,11 +784,7 @@ namespace ExternalMinecraftLauncher
                 timer1.Enabled = false;
                 if (minecraft.ExitCode != 0)
                 {
-                    MessageBox.Show("Es ist ein Fehler aufgetreten und Minecraft wurde beendet." + Environment.NewLine +
-                                        "  -Falsche Mod Version?" + Environment.NewLine +
-                                        "  -Ungünstige Ram-Einstellungen?" + Environment.NewLine + Environment.NewLine +
-                                        "Details findest du im Log-Fenster."
-                                        );
+                    SetStatusText("Beendet mit Fehlercode " + minecraft.ExitCode);
                 }
                 button10.Enabled = true;
                 SwitchToMainWindow();
@@ -2517,6 +2513,19 @@ namespace ExternalMinecraftLauncher
         {
             ExternalLog log = new ExternalLog(this);
             log.Show();
+        }
+
+        private void StatusresetTimer_Tick(object sender, EventArgs e)
+        {
+            StatusresetTimer.Stop();
+            StatusTextLabel.Text = "Bereit.";
+        }
+
+        private void SetStatusText(string Text)
+        {
+            StatusresetTimer.Stop();
+            StatusresetTimer.Start();
+            StatusTextLabel.Text = Text;
         }
 
     }

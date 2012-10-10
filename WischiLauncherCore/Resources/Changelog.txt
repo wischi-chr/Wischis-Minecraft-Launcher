@@ -1,5 +1,11 @@
 ﻿ChangeLog - Wischis Minecraft Launcher
 
+10.10.2012 (v2.5.0.1384) ==============
+- Beenden des MC Fensters liefert auch
+  Fehlercode: 1 und somit eine Fehler-MessageBox.
+  -> Fehlercodes != 0 werden in der Statusbar
+  angezeigt (Danke an »NicoWaves« für den Tipp)
+
 20.09.2012 (v2.5.0.1374) ==============
 - Versionen in der Übersicht werden schneller geladen
 

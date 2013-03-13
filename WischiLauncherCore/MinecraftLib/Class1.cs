@@ -64,7 +64,7 @@ namespace WischisMinecraftCore
         {
             //HttpWebRequest HttpWReq = (HttpWebRequest)WebRequest.Create("http://session.minecraft.net/game/getversion.jsp");
             HttpWebRequest HttpWReq = (HttpWebRequest)WebRequest.Create("https://login.minecraft.net/");
-            ASCIIEncoding encoding=new ASCIIEncoding();
+            ASCIIEncoding encoding = new ASCIIEncoding();
             string postData = "user=" + System.Web.HttpUtility.UrlEncode(user) + "&password=" + System.Web.HttpUtility.UrlEncode(pass) + "&version=13";
             byte[] data = encoding.GetBytes(postData);
 
@@ -76,7 +76,7 @@ namespace WischisMinecraftCore
             newStream.Write(data,0,data.Length);
             newStream.Close();
 
-            HttpWebResponse resp = (HttpWebResponse)HttpWReq.GetResponse();
+            WebResponse resp = HttpWReq.GetResponse();
             string code = (new StreamReader(resp.GetResponseStream())).ReadToEnd();
 
             string[] teile = code.Split(':');

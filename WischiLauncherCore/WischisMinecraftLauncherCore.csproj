@@ -88,7 +88,8 @@
     <Compile Include="LauncherProfilesLib\Class1.cs" />
     <Compile Include="MinecraftLib\Class1.cs" />
     <Compile Include="ModMergeLib\ModMerge.cs" />
-    <Compile Include="PluginSystem\PluginSystem.cs" />
+    <Compile Include="PluginSystem\PluginHost.cs" />
+    <Compile Include="PluginSystem\WischiLauncherPlugin.cs" />
     <Compile Include="ProfileName.cs">
       <SubType>Form</SubType>
     </Compile>

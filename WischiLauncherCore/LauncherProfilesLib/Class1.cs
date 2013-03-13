@@ -318,6 +318,29 @@ namespace WischisLauncherCore
         private bool _MinecraftOptionOverwrite;
 
 
+
+
+
+        [ProfileSettingStore("Minecraft.WaitNonResponding", RegistryValueKind.String, false)]
+        public bool LauncherWaitNonResponding
+        {
+            get
+            {
+                return _LauncherWaitNonResponding;
+            }
+            set
+            {
+                bool istsneu = _LauncherWaitNonResponding != value;
+                _LauncherWaitNonResponding = value;
+                if (istsneu) PropertyChange("LauncherWaitNonResponding");
+            }
+        }
+        private bool _LauncherWaitNonResponding;
+
+
+
+
+
         [ProfileSettingStore("Minecraft.StateInfo", RegistryValueKind.String, "")]
         public string MinecraftStateInfo
         {

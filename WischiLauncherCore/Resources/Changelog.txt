@@ -1,5 +1,17 @@
 ﻿ChangeLog - Wischis Minecraft Launcher
 
+30.01.2012 (v2.5.0.1400) ==============
+- Verlängerung der TimeoutZeit auf 15sek
+- TimeOut-Kill kann deaktiviert werden
+- Kleines Update mit Offline-Modus
+  Starten mit Parameter /offline=true
+  (ist noch in Testphase)
+
+26.12.2012 (v2.5.0.1394) ==============
+- Minecraft Login Server Expect100Continue
+  Header Bug durch clientseitiges verhindern
+  des Headers umgangen.
+
 10.10.2012 (v2.5.0.1384) ==============
 - Beenden des MC Fensters liefert auch
   Fehlercode: 1 und somit eine Fehler-MessageBox.

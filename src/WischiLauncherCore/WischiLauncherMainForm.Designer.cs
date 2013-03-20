@@ -125,6 +125,11 @@
 			this.NoPluginInfoLabel = new System.Windows.Forms.Label();
 			this.PluginListBox = new System.Windows.Forms.ListBox();
 			this.tabPage6 = new System.Windows.Forms.TabPage();
+			this.label11 = new System.Windows.Forms.Label();
+			this.label10 = new System.Windows.Forms.Label();
+			this.label12 = new System.Windows.Forms.Label();
+			this.textBox12 = new System.Windows.Forms.TextBox();
+			this.pictureBox4 = new System.Windows.Forms.PictureBox();
 			this.tabControl2 = new System.Windows.Forms.TabControl();
 			this.tabPage3 = new System.Windows.Forms.TabPage();
 			this.textBox9 = new System.Windows.Forms.TextBox();
@@ -170,6 +175,8 @@
 			this.StatusRefresh = new System.ComponentModel.BackgroundWorker();
 			this.timer2 = new System.Windows.Forms.Timer(this.components);
 			this.StatusresetTimer = new System.Windows.Forms.Timer(this.components);
+			this.tabPage4 = new System.Windows.Forms.TabPage();
+			this.textBox13 = new System.Windows.Forms.TextBox();
 			this.ModListe = new WischisMinecraftLauncher.ListViewEx();
 			this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
 			this.MessageFrameMenue.SuspendLayout();
@@ -193,6 +200,7 @@
 			this.groupBox2.SuspendLayout();
 			this.PluginControlHolder.SuspendLayout();
 			this.tabPage6.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
 			this.tabControl2.SuspendLayout();
 			this.tabPage3.SuspendLayout();
 			this.tabPage2.SuspendLayout();
@@ -202,6 +210,7 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
 			this.statusStrip1.SuspendLayout();
 			this.panel5.SuspendLayout();
+			this.tabPage4.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// imageList2
@@ -1157,6 +1166,11 @@
 			// 
 			// tabPage6
 			// 
+			this.tabPage6.Controls.Add(this.label11);
+			this.tabPage6.Controls.Add(this.label10);
+			this.tabPage6.Controls.Add(this.label12);
+			this.tabPage6.Controls.Add(this.textBox12);
+			this.tabPage6.Controls.Add(this.pictureBox4);
 			this.tabPage6.Controls.Add(this.tabControl2);
 			this.tabPage6.Controls.Add(this.linkLabel2);
 			this.tabPage6.Controls.Add(this.label15);
@@ -1172,10 +1186,62 @@
 			this.tabPage6.Text = "Info";
 			this.tabPage6.UseVisualStyleBackColor = true;
 			// 
+			// label11
+			// 
+			this.label11.Location = new System.Drawing.Point(156, 283);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(162, 43);
+			this.label11.TabIndex = 12;
+			this.label11.Text = "Scanne den Code mit deiner Bitcoin - App oder kopiere die unten stehende Adresse";
+			this.label11.Click += new System.EventHandler(this.label11_Click);
+			// 
+			// label10
+			// 
+			this.label10.AutoSize = true;
+			this.label10.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label10.Location = new System.Drawing.Point(156, 269);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(106, 14);
+			this.label10.TabIndex = 11;
+			this.label10.Text = "Bitcoins spenden:";
+			this.label10.Click += new System.EventHandler(this.label10_Click);
+			// 
+			// label12
+			// 
+			this.label12.AutoSize = true;
+			this.label12.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label12.Location = new System.Drawing.Point(195, 406);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(148, 14);
+			this.label12.TabIndex = 14;
+			this.label12.Text = "Bitcoin Spenden-Adresse";
+			// 
+			// textBox12
+			// 
+			this.textBox12.Font = new System.Drawing.Font("Courier New", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.textBox12.Location = new System.Drawing.Point(12, 422);
+			this.textBox12.Name = "textBox12";
+			this.textBox12.ReadOnly = true;
+			this.textBox12.Size = new System.Drawing.Size(329, 22);
+			this.textBox12.TabIndex = 13;
+			this.textBox12.Text = "1MJSdQ8QiLUY89bnH2vGGjt4DnD1mRnQaS";
+			this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			// 
+			// pictureBox4
+			// 
+			this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+			this.pictureBox4.Location = new System.Drawing.Point(-6, 252);
+			this.pictureBox4.Name = "pictureBox4";
+			this.pictureBox4.Size = new System.Drawing.Size(171, 166);
+			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+			this.pictureBox4.TabIndex = 10;
+			this.pictureBox4.TabStop = false;
+			// 
 			// tabControl2
 			// 
 			this.tabControl2.Controls.Add(this.tabPage3);
 			this.tabControl2.Controls.Add(this.tabPage2);
+			this.tabControl2.Controls.Add(this.tabPage4);
 			this.tabControl2.Location = new System.Drawing.Point(354, 6);
 			this.tabControl2.Name = "tabControl2";
 			this.tabControl2.SelectedIndex = 0;
@@ -1231,7 +1297,7 @@
 			// linkLabel2
 			// 
 			this.linkLabel2.AutoSize = true;
-			this.linkLabel2.Location = new System.Drawing.Point(9, 430);
+			this.linkLabel2.Location = new System.Drawing.Point(9, 232);
 			this.linkLabel2.Name = "linkLabel2";
 			this.linkLabel2.Size = new System.Drawing.Size(230, 13);
 			this.linkLabel2.TabIndex = 8;
@@ -1241,16 +1307,18 @@
 			// 
 			// label15
 			// 
-			this.label15.Location = new System.Drawing.Point(9, 348);
+			this.label15.Location = new System.Drawing.Point(9, 191);
 			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(332, 82);
+			this.label15.Size = new System.Drawing.Size(332, 46);
 			this.label15.TabIndex = 7;
-			this.label15.Text = resources.GetString("label15.Text");
+			this.label15.Text = "Dir gefällt der Launcher? Dann spende eine Kleinigkeit. Jeder Spender wird wenn e" +
+    "r möchte auf der Spenderliste aufgelistet. Spenden kannst du Bitcoins oder via P" +
+    "aypal.";
 			// 
 			// AssemblyVersionLabel
 			// 
 			this.AssemblyVersionLabel.AutoSize = true;
-			this.AssemblyVersionLabel.Location = new System.Drawing.Point(9, 169);
+			this.AssemblyVersionLabel.Location = new System.Drawing.Point(9, 125);
 			this.AssemblyVersionLabel.Name = "AssemblyVersionLabel";
 			this.AssemblyVersionLabel.Size = new System.Drawing.Size(41, 13);
 			this.AssemblyVersionLabel.TabIndex = 4;
@@ -1259,9 +1327,9 @@
 			// AssemblyBeschreibung
 			// 
 			this.AssemblyBeschreibung.ForeColor = System.Drawing.Color.Gray;
-			this.AssemblyBeschreibung.Location = new System.Drawing.Point(9, 194);
+			this.AssemblyBeschreibung.Location = new System.Drawing.Point(9, 141);
 			this.AssemblyBeschreibung.Name = "AssemblyBeschreibung";
-			this.AssemblyBeschreibung.Size = new System.Drawing.Size(222, 66);
+			this.AssemblyBeschreibung.Size = new System.Drawing.Size(222, 43);
 			this.AssemblyBeschreibung.TabIndex = 3;
 			this.AssemblyBeschreibung.Text = "label10";
 			// 
@@ -1269,7 +1337,7 @@
 			// 
 			this.AssemblyTitelLabel.AutoSize = true;
 			this.AssemblyTitelLabel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.AssemblyTitelLabel.Location = new System.Drawing.Point(8, 150);
+			this.AssemblyTitelLabel.Location = new System.Drawing.Point(8, 106);
 			this.AssemblyTitelLabel.Name = "AssemblyTitelLabel";
 			this.AssemblyTitelLabel.Size = new System.Drawing.Size(63, 19);
 			this.AssemblyTitelLabel.TabIndex = 2;
@@ -1278,9 +1346,9 @@
 			// pictureBox1
 			// 
 			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-			this.pictureBox1.Location = new System.Drawing.Point(6, 7);
+			this.pictureBox1.Location = new System.Drawing.Point(6, 6);
 			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(335, 135);
+			this.pictureBox1.Size = new System.Drawing.Size(335, 97);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
 			this.pictureBox1.TabIndex = 1;
 			this.pictureBox1.TabStop = false;
@@ -1415,10 +1483,9 @@
             this.toolStripSeparator5,
             this.offlineLANNameToolStripMenuItem,
             this.FakePlayerName});
-			this.CrackTools.Image = global::WischisMinecraftLauncherCoreDLL.Properties.Resources.network_offline;
 			this.CrackTools.ImageTransparentColor = System.Drawing.Color.Magenta;
 			this.CrackTools.Name = "CrackTools";
-			this.CrackTools.Size = new System.Drawing.Size(120, 20);
+			this.CrackTools.Size = new System.Drawing.Size(104, 20);
 			this.CrackTools.Text = "Offline Settings";
 			// 
 			// crackedToolStripMenuItem
@@ -1466,7 +1533,7 @@
 			// toolStripStatusLabel1
 			// 
 			this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-			this.toolStripStatusLabel1.Size = new System.Drawing.Size(349, 17);
+			this.toolStripStatusLabel1.Size = new System.Drawing.Size(365, 17);
 			this.toolStripStatusLabel1.Spring = true;
 			// 
 			// ModAnalyzeInfo
@@ -1517,6 +1584,28 @@
 			// 
 			this.StatusresetTimer.Interval = 10000;
 			this.StatusresetTimer.Tick += new System.EventHandler(this.StatusresetTimer_Tick);
+			// 
+			// tabPage4
+			// 
+			this.tabPage4.Controls.Add(this.textBox13);
+			this.tabPage4.Location = new System.Drawing.Point(4, 22);
+			this.tabPage4.Name = "tabPage4";
+			this.tabPage4.Size = new System.Drawing.Size(422, 417);
+			this.tabPage4.TabIndex = 2;
+			this.tabPage4.Text = "Spender";
+			this.tabPage4.UseVisualStyleBackColor = true;
+			// 
+			// textBox13
+			// 
+			this.textBox13.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.textBox13.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.textBox13.Location = new System.Drawing.Point(0, 0);
+			this.textBox13.Multiline = true;
+			this.textBox13.Name = "textBox13";
+			this.textBox13.ReadOnly = true;
+			this.textBox13.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+			this.textBox13.Size = new System.Drawing.Size(422, 417);
+			this.textBox13.TabIndex = 6;
 			// 
 			// ModListe
 			// 
@@ -1599,6 +1688,7 @@
 			this.PluginControlHolder.ResumeLayout(false);
 			this.tabPage6.ResumeLayout(false);
 			this.tabPage6.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
 			this.tabControl2.ResumeLayout(false);
 			this.tabPage3.ResumeLayout(false);
 			this.tabPage3.PerformLayout();
@@ -1611,6 +1701,8 @@
 			this.statusStrip1.ResumeLayout(false);
 			this.statusStrip1.PerformLayout();
 			this.panel5.ResumeLayout(false);
+			this.tabPage4.ResumeLayout(false);
+			this.tabPage4.PerformLayout();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -1757,6 +1849,13 @@
         private System.Windows.Forms.ToolStripStatusLabel StatusTextLabel;
         private System.Windows.Forms.Timer StatusresetTimer;
         private System.Windows.Forms.CheckBox checkBox7;
+		  private System.Windows.Forms.PictureBox pictureBox4;
+		  private System.Windows.Forms.TextBox textBox12;
+		  private System.Windows.Forms.Label label11;
+		  private System.Windows.Forms.Label label10;
+		  private System.Windows.Forms.Label label12;
+		  private System.Windows.Forms.TabPage tabPage4;
+		  private System.Windows.Forms.TextBox textBox13;
     }
 }
 

@@ -1,6 +1,16 @@
 ﻿ChangeLog - Wischis Minecraft Launcher
 
-30.01.2012 (v2.5.0.1400) ==============
+14.03.2013 (v2.5.0.1510) ==============
+- Kleine Fehlerkorrektur im Plugin-System
+
+13.03.2013 (v2.5.0.1492) ==============
+- Erstellen einer primitiven Plugin API
+- Erstes Plugin erstellt
+  (einfügen bei %appdata%\.wischilauncher\plugins\)
+  http://bit.ly/16sIOX5
+- Spender bis jetzt in die Liste eingetragen
+
+30.01.2013 (v2.5.0.1400) ==============
 - Verlängerung der TimeoutZeit auf 15sek
 - TimeOut-Kill kann deaktiviert werden
 - Kleines Update mit Offline-Modus

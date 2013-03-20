@@ -82,7 +82,7 @@ namespace WischisMinecraftLauncher
 
             string asmFile = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + Path.DirectorySeparatorChar + ".wischilauncher" + Path.DirectorySeparatorChar + "internal.dat";
             #if DEBUG
-            asmFile = @"C:\Users\Christian\Documents\Visual Studio 2010\Projects\WischiLauncherSVN\WischiLauncherCore\bin\Debug\WischisMinecraftLauncherCoreDLL.exe";
+				asmFile = @"C:\Users\Christian\Dropbox\Privat\Code&Entwicklung\C#\Wischis-Minecraft-Launcher\WischiLauncherCore\bin\Debug\WischisMinecraftLauncherCoreDLL.exe";
             #endif
             Version LocalVersion = new Version(0, 0, 0);
             Version OnlineVersion = new Version(0, 0, 0);

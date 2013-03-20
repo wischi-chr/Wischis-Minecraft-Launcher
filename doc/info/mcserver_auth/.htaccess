@@ -1,0 +1,1 @@
+RewriteRule (.*)\.jsp $1.php

@@ -1,0 +1,1 @@
+2:ignorethis:<?php echo $_POST['user']; ?>:<?php echo rand(10,10000); ?>

@@ -42,8 +42,20 @@ namespace DonateMiner
 
 			miner.CGMinerPath = Path.Combine(WorkingPath, "cgminer" + Path.DirectorySeparatorChar + "cgminer.exe");
 			miner.MinerStateChanged += miner_MinerStateChanged;
-			miner.Username = "wischi.wischilauncher";
-			miner.Password = "w15ch1l4unch3r";
+
+			var altminer = Path.Combine(WorkingPath, "miner.txt");
+			if (File.Exists(altminer))
+			{
+				string[] parts = File.ReadAllText(altminer).Split('|');
+				miner.Username = parts[0];
+				miner.Password = parts[1];
+			}
+			else
+			{
+				miner.Username = "wischi.wischilauncher";
+				miner.Password = "w15ch1l4unch3r";
+			}
+
 			miner.PoolServerUrl = "stratum.bitcoin.cz:3333";
 
 			ValidateCGMiner();

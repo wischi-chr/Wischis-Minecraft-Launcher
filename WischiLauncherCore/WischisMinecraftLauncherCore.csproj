@@ -205,6 +205,9 @@
     <EmbeddedResource Include="Resources\WMLPatch.class" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\Spender.txt" />
+    <None Include="Resources\wischispendebtc1.png" />
+    <None Include="Resources\wischispendebtc.png" />
     <None Include="Resources\plus-icon.png" />
     <EmbeddedResource Include="Resources\Changelog.txt" />
     <None Include="Resources\network-offline.png" />
@@ -215,7 +218,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_UseGlobalSettings="False" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.None.None.Increment" BuildVersion_IncrementBeforeBuild="False" BuildVersion_ConfigurationName="Debug" />
+      <UserProperties BuildVersion_ConfigurationName="Debug" BuildVersion_IncrementBeforeBuild="False" BuildVersion_BuildVersioningStyle="None.None.None.Increment" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" BuildVersion_UseGlobalSettings="False" />
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>

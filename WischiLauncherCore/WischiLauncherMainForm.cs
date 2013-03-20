@@ -88,6 +88,7 @@ namespace ExternalMinecraftLauncher
 			LoadTextsFromRessources();
 			BuildPriorityList();
 
+			AppDomain.CurrentDomain.AssemblyResolve += CurrentDomain_AssemblyResolve;
 
 			AssemblyTitelLabel.Text = AssemblyTitle;
 			AssemblyBeschreibung.Text = AssemblyDescription;
@@ -99,6 +100,17 @@ namespace ExternalMinecraftLauncher
 			StatusRefresh.RunWorkerAsync();
 
 			LoadPlugins();
+		}
+
+		//ToDo: irgendwie wird das zum laden der Plugins benötigt!?
+		Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
+		{
+			var asm = Assembly.GetAssembly(this.GetType());
+			if (asm.FullName == args.Name)
+			{
+				return asm;
+			}
+			throw new Exception(args.Name + " gesucht, aber nur folgendes auf Lager: " + asm.FullName);
 		}
 
 		private void LoadPlugins()
@@ -113,7 +125,7 @@ namespace ExternalMinecraftLauncher
 					#region PluginDatei laden
 					try
 					{
-						asm = Assembly.LoadFile(pluginfile);
+						asm = Assembly.LoadFrom(pluginfile);
 					}
 					catch (Exception ex)
 					{
@@ -1540,6 +1552,11 @@ namespace ExternalMinecraftLauncher
 			Stream ChangeStream = Assembly.GetExecutingAssembly().GetManifestResourceStream(Change);
 			textBox9.Text = new StreamReader(ChangeStream).ReadToEnd();
 
+			string Spender = Assembly.GetExecutingAssembly().GetName().Name + ".Resources." + "Spender.txt";
+			Stream SpenderStream = Assembly.GetExecutingAssembly().GetManifestResourceStream(Spender);
+			textBox13.Text = new StreamReader(SpenderStream).ReadToEnd();
+
+
 		}
 
 		void LoadMinecraftFont()
@@ -2606,6 +2623,16 @@ namespace ExternalMinecraftLauncher
 				PluginNameLabel.Text = plugin.Name;
 				PluginVersionLabel.Text = "Version: " + plugin.Version.ToString();
 			}
+		}
+
+		private void label11_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label10_Click(object sender, EventArgs e)
+		{
+
 		}
 
 	}

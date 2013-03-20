@@ -3061,11 +3061,14 @@
   <data name="grass_link24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\grass_link24.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="network-offline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\network-offline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="plus-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plus-icon.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="network-offline" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\network-offline.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="wischispendebtc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wischispendebtc1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

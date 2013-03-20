@@ -55,12 +55,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WischiLauncherCore\WischisMinecraftLauncherCore.csproj">
-      <Project>{bdda19ef-16df-43a2-b0d9-00931985766e}</Project>
-      <Name>WischisMinecraftLauncherCore</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="DonateMinerGUI.resx">
       <DependentUpon>DonateMinerGUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -77,6 +71,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ghastface.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WischiLauncherCore\WischisMinecraftLauncherCore.csproj">
+      <Project>{bdda19ef-16df-43a2-b0d9-00931985766e}</Project>
+      <Name>WischisMinecraftLauncherCore</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

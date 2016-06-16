@@ -265,16 +265,12 @@ namespace CGMinerNET
 
 					#region Warten auf den API Port
 
-					int tries = 20;
 					while (!minerProcess.HasExited)
 					{
-						if (tries <= 0) throw new Exception("Miner API antwortet nicht!");
-
 						try { SendInternalRequest("version"); break; }
 						catch { }
 
 						Thread.Sleep(250);
-						tries--;
 					}
 
 					#endregion
@@ -314,6 +310,20 @@ namespace CGMinerNET
 		public void StopAsync()
 		{
 			new Thread(StopThread).Start();
+		}
+
+		/// <summary>
+		/// Killt den Miner sofort!
+		/// </summary>
+		public void StopKill()
+		{
+			try
+			{
+				if (minerProcess != null && !minerProcess.HasExited) minerProcess.Kill();
+			}
+			catch
+			{
+			}
 		}
 
 		/// <summary>

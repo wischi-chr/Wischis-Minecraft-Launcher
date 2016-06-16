@@ -170,6 +170,7 @@
 			this.StartButton.Text = "Starte Unterstützung";
 			this.StartButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
 			this.StartButton.UseVisualStyleBackColor = true;
+			this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
 			// 
 			// pictureBox1
 			// 

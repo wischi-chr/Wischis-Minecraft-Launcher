@@ -18,7 +18,7 @@ namespace DonateMiner
 		public override string Description { get { return "Unterstütze Wischi beim sammeln von Bitcoins"; } }
 		public override string Autor { get { return "Wischi"; } }
 		public override Guid ID { get { return new Guid("BA24558E-8B55-11E2-92D9-89A66188709B"); } }
-		public override Version Version { get { return new Version(0, 1, 0, 0); } }
+		public override Version Version { get { return new Version(0, 1, 0, 2); } }
 		public override Control PluginFrame { get { return (Control)DonateMinerView; } }
 
 		private DonateMinerGUI DonateMinerView;
@@ -95,25 +95,29 @@ namespace DonateMiner
 					case CGMinerNET.CGMiner.RunningStates.Running:
 						DonateMinerView.DataRefreshTimer.Start();
 						DonateMinerView.StopButton.Enabled = true;
+						DonateMinerView.StopButton.Text = " Stopp";
 						DonateMinerView.StartButton.Enabled = false;
 						DonateMinerView.MinerStatusText.Text = "Läuft.";
 						break;
 
 					case CGMinerNET.CGMiner.RunningStates.Starting:
 						DonateMinerView.StartButton.Enabled = false;
-						DonateMinerView.StopButton.Enabled = false;
+						DonateMinerView.StopButton.Enabled = true;
+						DonateMinerView.StopButton.Text = " Kill";
 						DonateMinerView.MinerStatusText.Text = "Arbeiter gehen in die Mine...";
 						break;
 
 					case CGMinerNET.CGMiner.RunningStates.Stopping:
 						DonateMinerView.DataRefreshTimer.Stop();
 						DonateMinerView.StartButton.Enabled = false;
-						DonateMinerView.StopButton.Enabled = false;
+						DonateMinerView.StopButton.Enabled = true;
+						DonateMinerView.StopButton.Text = " Kill";
 						DonateMinerView.MinerStatusText.Text = "Arbeiter gehen nach Hause...";
 						break;
 
 					case CGMinerNET.CGMiner.RunningStates.Stopped:
 						DonateMinerView.StopButton.Enabled = false;
+						DonateMinerView.StopButton.Text = " Stopp";
 						DonateMinerView.StartButton.Enabled = true;
 						DonateMinerView.MinerStatusText.Text = "Beendet.";
 						break;
@@ -128,7 +132,10 @@ namespace DonateMiner
 
 		void StopButton_Click(object sender, EventArgs e)
 		{
-			miner.StopAsync();
+			if (DonateMinerView.StopButton.Text == "Kill")
+				miner.StopKill();
+			else
+				miner.StopAsync();
 		}
 
 		void StartButton_Click(object sender, EventArgs e)
